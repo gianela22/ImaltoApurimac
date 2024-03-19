@@ -53,7 +53,7 @@
   p <- ggplot(datos2, aes(edad, fill = Sexo)) +
   geom_bar() +
     coord_flip()
-  p + theme_bw()
+  p
   
 @
              	
@@ -77,7 +77,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	
 	graph3 <- ggplot(datos2, aes(tenencia)) +
   geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "white") + xlab("propiedad") + ylab("frecuencia")  
-	graph3 + theme_bw()
+	graph3
 	@
 	\caption{Tenencia de la propiedad de los pobladores de \comunidad}
 	\end{figure}
@@ -99,7 +99,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	
 	graph4 <- ggplot(datos2, aes(añosh)) +
   geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("Años") + ylab("Cantidad") + coord_flip()  
-	graph4 + theme_bw()
+	graph4
 	@
 	\caption{Años de permanencia de los pobladores en \comunidad}
 	\end{figure}
@@ -120,7 +120,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	
 	graph5 <- ggplot(datos2, aes(Idioma)) +
   geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("Cantidad") + ylab("Idioma")  
-	graph5 + theme_bw()
+	graph5
 	@
 	\caption{Idioma que habla el poblador}
 	\end{figure}
@@ -141,7 +141,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	
 	graph6 <- ggplot(datos2, aes(fuentea)) +
   geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("Fuente de agua") + ylab("Cantidad")  
-	graph6 + theme_bw()
+	graph6
 	@
 	\caption{Fuente de agua para consumo de agua de los pobladores de \comunidad}
 	\end{figure}
@@ -163,7 +163,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	
 	graph7 <- ggplot(datos2, aes(basura)) +
   geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("Tipo de eliminacion") + ylab("Cantidad")  + coord_flip() 
-	graph7 + theme_bw() 
+	graph7 
 	 
 	@
 	\caption{Eliminacion de la basura en \comunidad}
@@ -419,18 +419,12 @@ Emisoras y horarios preferidos:
 	datos2$emisora.2.horario[datos2$emisora.2.horario == "05:00:00 p. m."] <- "17:00:00 p. m."
 	datos2$emisora.2.horario[datos2$emisora.2.horario == "07:00:00 p. m."] <- "19:00:00 p. m."
 	
-	
-	
-	
 	#probando eliminando NA
 	datos2$emisora.2.horario <- substr(datos2$emisora.2.horario, 1, nchar(datos2$emisora.2.horario)- 9)
 	
 	datos2 <- datos2[!is.na(datos2$emisora.2.horario), ]
 	ggplot(datos2, aes(emisora.2.horario)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-	
-	
-	
 	@
 	\caption{Horario de emisora preferida}
 	\end{figure}
@@ -462,7 +456,7 @@ Emisoras y horarios preferidos:
 	
 	ggplot(datos2, aes(Emi2, emisora.2.horario)) +
 	  geom_count(colour = rgb(0.36, 0.79, 0.95))
-	View(datos2)
+	
 	@
 	\caption{Emisoras y horarios preferidos}
 	\end{figure}
@@ -622,11 +616,6 @@ Emisoras y horarios preferidos:
 	datos2 <- datos2[!is.na(datos2$cultivo2), ]
 	ggplot(datos2, aes(cultivo2)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-	
-	
-
-	
-	
 	@
 	\caption{Cultivo al que se dedican las personas como segunda opcion}
 	\end{figure}
@@ -657,9 +646,7 @@ Emisoras y horarios preferidos:
 	ggplot(datos2, aes(cultivo2, qcultivo2), na.rm = TRUE) +
 	  geom_count(colour = rgb(0.36, 0.79, 0.95)) +
 	  scale_size_area()
-	  
-	
-	
+
 	@
 	\caption{Cantidad de cultivo de la segunda opcion de cultivo en \comunidad}
 	\end{figure}
@@ -770,9 +757,6 @@ Emisoras y horarios preferidos:
 	datos2 <- datos2[!is.na(datos2$animal1), ]
 	ggplot(datos2, aes(animal1)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-
-	
-	
 	@
 	\caption{Animales al que se dedican las personas como primera opcion}
 	\end{figure}
@@ -831,8 +815,6 @@ Emisoras y horarios preferidos:
 	datos2 <- datos2[!is.na(datos2$tipo.1), ]
 	ggplot(datos2, aes(tipo.1)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-
-	
 	@
 	\caption{Metodo de crianza de la primera opcion de crianza de animales en \comunidad}
 	\end{figure}
@@ -890,7 +872,6 @@ Emisoras y horarios preferidos:
 	ggplot(datos2, aes(animal2, cabezas2)) +
 	  geom_count(color = rgb(0.36, 0.79, 0.95)) +
 	  scale_size_area()
-	
 	@
 	\caption{Cantidad de animales criados de segunda opcion en funcion a la cantidad y especie en \comunidad}
 	\end{figure}
@@ -978,7 +959,6 @@ Emisoras y horarios preferidos:
 	ggplot(datos2, aes(animal3, cabezas3), na.rm = TRUE) +
 	  geom_count(color = rgb(0.36, 0.79, 0.95)) + 
 	  scale_size_area()
-	
 	@
 	\caption{Cantidad de animales criados de tercera opcion en funcion a la cantidad y especie en \comunidad}
 	\end{figure}
@@ -1032,7 +1012,7 @@ Emisoras y horarios preferidos:
 	
 	graph13 <- ggplot(datos2, aes(accrecurso)) +
   geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("") + ylab("Frecuencia")  
-	graph13 + theme_minimal()
+	graph13
 	@
 	\caption{Acceso al recurso}
 	\end{figure}
@@ -1108,8 +1088,6 @@ Emisoras y horarios preferidos:
 	datos2 <- datos2[!is.na(datos2$satisfecho), ]
 	ggplot(datos2, aes(satisfecho)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-	
-	
 	@
 	\caption{Satisfaccion con el uso del recurso}
 	\end{figure}
@@ -1140,8 +1118,6 @@ Emisoras y horarios preferidos:
 	datos2 <- datos2[!is.na(datos2$Ocaptacion), ]
 	ggplot(datos2, aes(Ocaptacion)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-	
-	
 	@
 	\caption{Otro recurso que suple la oferta del recurso}
 	\end{figure}
@@ -1264,13 +1240,12 @@ Emisoras y horarios preferidos:
 	#modifica aquellos valores vacios por NA.
 	datos2$ingresof[datos2$ingresof == ""] <- NA
 	datos2$ingresof[datos2$ingresof == "No sabe"] <- NA
+	
 	datos2$ingresof <- as.numeric(datos2$ingresof)
-	datos2$uso[datos2$integrantes == ""] <- NA
+	datos2 <- datos2[!is.na(datos2$ingresof), ] 
+	
 	ggplot(datos2, aes(ingresof, integrantes), na.rm = TRUE) +
 	  geom_count(color = rgb(0.36, 0.79, 0.95))
-	
-	
-	
 	@
 	\caption{Ingreso promedio de las familias de \comunidad en funciona a la cantidad de persionas que trabajan}
 	\end{figure}
@@ -1299,8 +1274,6 @@ Los datos del gráfico muestra que 6 integrantes de la familia pueden generar un
 	datos2 <- datos2[!is.na(datos2$religion), ]
 	ggplot(datos2, aes(religion)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-	
-	
 	@
 	\caption{Religion de los pobladores de \comunidad}
 	\end{figure}
@@ -1401,8 +1374,6 @@ Los datos del gráfico muestra que 6 integrantes de la familia pueden generar un
 	datos2 <- datos2[!is.na(datos2$pago), ]
 	ggplot(datos2, aes(pago)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-	
-	
 	@
 	\caption{Pago realizado para el comite de gestion de qochas en \comunidad}
 	\end{figure}
@@ -1516,8 +1487,6 @@ Los datos del gráfico muestra que 6 integrantes de la familia pueden generar un
 	datos2 <- datos2[!is.na(datos2$usoadecuado), ]
 	ggplot(datos2, aes(usoadecuado)) + 
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
-	
-	
 	@
 	\caption{Percepcion de uso adecuado de las qochas}
 	En este caso las dos alternativas son muy cercanas en proporción, esto concluye que las Qochas son usadas en el riego de sus parcelas sí las condiciones geográficas lo permite, existe un porcentaje similar que no usan adecuadamente el agua de las Qochas.
@@ -1552,8 +1521,6 @@ Los datos del gráfico muestra que 6 integrantes de la familia pueden generar un
 	#webshot::install_phantomjs(force = TRUE)
   
 	#datos2$Climatico[datos2$Climatico == "si"] <- NA
-  
-	
 	noNaa <- datos2$Climatico[!is.na(datos2$Climatico)]
 	frecuencias <- table(noNaa)
 	graph18 <- wordcloud2(data = frecuencias, size = 3)
@@ -1738,7 +1705,6 @@ Los datos del gráfico muestra que 6 integrantes de la familia pueden generar un
 	graph18 <- wordcloud2(data = frecuencias, size = 1.5)
 	graph18
 	
-	View(datos2)
 	
 	#table(datos2$Lluvia)
 	
