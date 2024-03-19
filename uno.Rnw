@@ -1,0 +1,8 @@
+\documentclass{article}
+
+\begin{document}
+
+Esta es la prueba
+
+
+\end{document}
