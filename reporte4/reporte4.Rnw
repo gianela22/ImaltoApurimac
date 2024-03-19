@@ -1,0 +1,1705 @@
+\documentclass[12pt]{article}
+\input{settings/paquetes}
+\input{settings/comandos}
+\input{settings/enpie}
+\input{settings/entornos}
+\begin{document}
+\input{contenido/titulo}
+\tableofcontents
+\newpage
+\listoftables
+\newpage
+\listoffigures
+\newpage
+	La encuesta se realizo en la comunidad campesina de \comunidad\- del distrito de distrito, provincia de provincia departamento del Cusco.\\
+	\\
+	Para esto se considero informacion general de la poblacion, tomando en cuenta el genero, la edad y el recurso que utilizan, en este caso si usan qocha.\\
+	\\
+	Del genero de las personas encuestadas se puede mostrar lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<uno, echo = FALSE, fig.width=4, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	graph1 <- ggplot(datos2, aes(Sexo)) +
+  geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("") + ylab("") 
+	graph1
+	@
+	\caption{Sexo de los encuestados de \comunidad}
+	\end{figure}
+	Se observa que las cantidades son casi similares, de la cual se observa que los de genero masculino es mayor.
+	\section{Datos generales}
+	Edad de los encuestados, de la encuesta realizada se tiene la edad de los participantes, como se muestra a continuacion:
+	\begin{figure}[H]
+	\centering
+	<<dos, echo = FALSE, fig.width=5, fig.height=6>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#con una sola barra, quedarse con este
+  p <- ggplot(datos2, aes(edad, fill = Sexo)) +
+  geom_bar() +
+    coord_flip() 
+  p
+ 
+   
+@
+             	
+	\caption{Edad de los encuestados de \comunidad}
+	\end{figure}
+	
+	
+	
+	Se puede observar que el rango de edades va desde 31 hasta 75, siendo la edad de mayor frecuencia la de 42
+	\section{Informacion sobre la vivienda}
+Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuestados, de la cual se oberva que el 100\% es propia, como se puede observar en la grafica:
+	\begin{figure}[H]
+	\centering
+	<<tres, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	graph3 <- ggplot(datos2, aes(tenencia)) +
+  geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "white") + xlab("propiedad") + ylab("frecuencia")  
+	graph3 + theme_bw()
+	@
+	\caption{Tenencia de la propiedad de los pobladores de \comunidad}
+	\end{figure}
+	
+	Se consulto el tiempo, años, que viven los pobladores en la comunidad, de lo cual se tiene como resultado lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<cuatro, echo = FALSE, fig.width=5, fig.height=6>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$añosh <- as.numeric(datos2$añosh)
+	
+	graph4 <- ggplot(datos2, aes(añosh)) +
+  geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("Años") + ylab("Cantidad") + coord_flip()  
+	graph4 + theme_bw()
+	@
+	\caption{Años de permanencia de los pobladores en \comunidad}
+	\end{figure}
+	Se observo que los años que habitan los pobladores van desde 2 a 73, los años que tienen mas frecuencia son de 50 y 20.
+	
+	Del idioma que los encuestados se identifico que que la mayoria habla español y quechua, como se grafica:
+	\begin{figure}[H]
+	\centering
+	<<cinco, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	graph5 <- ggplot(datos2, aes(Idioma)) +
+  geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("Cantidad") + ylab("Idioma")  
+	graph5
+	@
+	\caption{Idioma que habla el poblador}
+	\end{figure}
+	Se observa que la gran mayoria de los encuestados hablan español y quechua, mientras que solo una pequeña parte habla solo quechua.
+	\section{Informacion de servicios}
+	De la fuente de agua que los pobladores se abastecen se identifico lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<seis, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	datos2$fuentea[datos2$fuentea == "pileta publica"] <- "Pileta"
+	datos2$fuentea[datos2$fuentea == "acequia"] <- "Captacion"
+	datos2$fuentea[datos2$fuentea == "manantial"] <- "Captacion"
+	
+	
+	graph6 <- ggplot(datos2, aes(fuentea)) +
+  geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("Fuente de agua") + ylab("Cantidad")  
+	graph6
+	
+	#table(datos2$fuentea)
+	@
+	\caption{Fuente de agua para consumo de agua de los pobladores de \comunidad}
+	\end{figure}
+	La fuente de manantial y rio/laguna son las que proveen de agua para los pobladores, siendo la de menos uso ojo de agua\\
+	\\
+	La eliminacion de basura en las viviendas de los pobladores es la siguiente
+	\begin{figure}[H]
+	\centering
+	<<siete, echo = FALSE, fig.width=8, fig.height=5>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$basura[datos2$basura == "Hoyos"] <- "Hoyo"
+	
+	graph7 <- ggplot(datos2, aes(basura)) +
+  geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("Tipo de eliminacion") + ylab("Cantidad")  + coord_flip() 
+	graph7 
+	 
+	@
+	\caption{Eliminacion de la basura en \comunidad}
+	\end{figure}
+	Los tipos de eliminacion con mayor frecuencia son enterrado y quemado, siendo el menor el uso de hoyo; se observa que el uso del recolector municipal es de los que tienen menos uso.\\
+	\\
+	Para la preparacion de sus alimentos las personas utilizan los siguientes combustibles:
+	\begin{figure}[H]
+	\centering
+	<<ocho, echo = FALSE, fig.width=8, fig.height=5>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#reemplazando los valores vacios en NA
+	datos2$combustible[datos2$combustible == ""] <- NA
+	datos2$combustible[datos2$combustible == "bosta, Estiércol de alpaca"] <- "bosta"
+	datos2$combustible[datos2$combustible == "Estiércol de alpaca"] <- "bosta"
+	datos2$combustible[datos2$combustible == "leña, Estiércol de alpaca"] <- "bosta, leña"
+	#table(datos2$combustible)
+	
+	#table(datos2$combustible)
+	ggplot(datos2, aes(combustible)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95)) +
+	  coord_flip()
+	
+	
+	@
+	\caption{Uso de combustible para preparacion de alimentos en \comunidad}
+	\end{figure}
+	Los pobladores usan con mas frecuencia leña, luego gas, seguido de bosta y gas o gas leña; los pobladores indican que tienden a usar gas en las temporadas en las que no es posible obtener leña, se puede decudir que los pobladores tienen mayor preferencia por el uso de leña porque su uso es mas accesible y barato.\\
+	\\
+	Las enfermedades que mas aquejan a la poblacion son las siguientes:
+	\begin{figure}[H]
+	\centering
+	<<nueve, echo = FALSE, fig.width=5, fig.height=7>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#reemplazando los valores vacios en NA
+	#table(datos2$enfermedad)
+	datos2$enfermedad[datos2$enfermedad == "Ninguna"] <- NA
+	#datos2$enfermedad[datos2$enfermedad == "Gripe"] <- "Tos"
+	#datos2$enfermedad[datos2$enfermedad == "Diarreicas"] <- "Diarreicas, Infecciones"
+	#datos2$enfermedad[datos2$enfermedad == "Infecciones"] <- "Diarreicas, Infecciones"
+	datos2 <- datos2[!is.na(datos2$enfermedad), ]
+	ggplot(datos2, aes(enfermedad)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95)) + 
+	  coord_flip()
+	
+	@
+	\caption{Enfermedades que aquejan a los pobladores de \comunidad}
+	\end{figure}
+	Se observa que las enfermedades diarreicas son las que mas aquejan a la poblacion, seguida de otras y ninguna.\\
+	\\
+	Las personas que sufren de alguna enfermedad se atienden en los siguientes:
+	\begin{figure}[H]
+	\centering
+	<<once, echo = FALSE, fig.width=8, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#reemplazando los valores vacios en NA
+	#table(datos2$atiendef)
+	datos2$atiendef[datos2$atiendef == ""] <- NA
+	datos2$atiendef[datos2$atiendef == "Natural, boticas"] <- "Natural, botica"
+	datos2$atiendef[datos2$atiendef == "Medicina local"] <- "Natural"
+	
+	
+	datos2 <- datos2[!is.na(datos2$atiendef), ]
+	ggplot(datos2, aes(atiendef)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	
+
+	@
+	\caption{Lugar de atencion cuando se enferman}
+	\end{figure}
+  Como se puede observar la mayoria de los pobladores se atienden en la posta de salud mas cercana de su residencia.\\
+  \\
+	Se consulto si estas personas cuentan con seguro medico, de lo cual se obtuvo el siguiente resultado:
+	\begin{figure}[H]
+	\centering
+	<<doce, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#reemplazando los valores vacios en NA
+	datos2$seguro[datos2$seguro == ""] <- NA
+	datos2$seguro[datos2$seguro == "SIS"] <- "si"
+	
+	datos2 <- datos2[!is.na(datos2$seguro), ]
+	ggplot(datos2, aes(seguro)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	
+	
+	@
+	\caption{Uso de un seguro medico}
+	\end{figure}
+	Se consulto respecto a la preferencia de emisoras radiales que se escucha, al respecto se tiene como primera emisora de preferencia la siguiente:
+	\begin{figure}[H]
+	\centering
+	<<one, echo = FALSE, fig.width=8, fig.height=5>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$Emi1[datos2$Emi1 == ""] <- NA
+	#table(datos2$Emi1)
+	datos2$Emi1[datos2$Emi1 == "SantoTomas"] <- "Santo Tomas"
+	datos2$Emi1[datos2$Emi1 == "Santos Tomas"] <- "Santo Tomas"
+	
+	
+	
+	ggplot(datos2, aes(Emi1)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95)) 
+	
+	
+	@
+	\caption{Primera emisora que se escucha}
+	\end{figure}
+	Como se puede observar la emisora con mayor audiencia es Laramani, seguido de emisora Espinar y las demas con menor porcentaje, como son Arequipa, Cadena Sur, Radio municipal, y San Luis.\\
+	\\
+	El horario que los encuestados prefieren escuchar es el siguiente:
+	\begin{figure}[H]
+	\centering
+	<<two, echo = FALSE, fig.width=7, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
+	
+	#table(datos2$emisora.1.horario)
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "04:07:00 a. m."] <- "04:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "04:08:00 a. m."] <- "04:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "05:07:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "05:08:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "05:09:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "06:07:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "06:08:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "06:13:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "07:08:00 a. m."] <- "07:00:00 a. m."
+	#table(datos2$emisora.1.horario)
+	#probando eliminando NA
+	datos2$emisora.1.horario <- substr(datos2$emisora.1.horario, 1, nchar(datos2$emisora.1.horario)- 9)
+	
+	datos2 <- datos2[!is.na(datos2$emisora.1.horario), ]
+	ggplot(datos2, aes(emisora.1.horario)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Horario de emisora preferida}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	<<three, echo = FALSE, fig.width=7, fig.height=5>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	library(ggplot2)
+  
+  datos2$Emi1[datos2$Emi1 == ""] <- NA
+	datos2$Emi1[datos2$Emi1 == "No"] <- "Ninguno"
+  #table(datos2$Emi1)
+  datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
+	
+	#table(datos2$emisora.1.horario)
+datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
+	
+	#table(datos2$emisora.1.horario)
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "04:07:00 a. m."] <- "04:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "04:08:00 a. m."] <- "04:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "05:07:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "05:08:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "05:09:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "06:07:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "06:08:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "06:13:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.1.horario[datos2$emisora.1.horario == "07:08:00 a. m."] <- "07:00:00 a. m."
+  
+	
+  datos2$emisora.1.horario <- substr(datos2$emisora.1.horario, 1, nchar(datos2$emisora.1.horario)- 9)
+	
+	
+	datos2 <- datos2[!is.na(datos2$Emi1), ]
+	datos2 <- datos2[!is.na(datos2$emisora.1.horario), ]
+	
+	ggplot(datos2, aes(emisora.1.horario, Emi1)) + 
+	  geom_count(colour = rgb(0.36, 0.79, 0.95)) + 
+	  scale_size_area()
+	
+	@
+	\caption{Emisoras y horarios preferidos}
+	\end{figure}
+	Como se puede observar todas las emisoras son sintonizadas a las 07:00 horas. Las emisoras que mas se escuchan en ese horario son Laramani y Espinar\\
+	\\
+	
+	Se consulto respecto a la preferencia de emisoras radiales que se escucha, al respecto se tiene como primera emisora de preferencia la siguiente:
+	\begin{figure}[H]
+	\centering
+	<<four, echo = FALSE, fig.width=8, fig.height=5>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$Emi2[datos2$Emi2 == ""] <- NA
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "Cadena sur (Espinar)"] <- "Espinar"
+	
+	datos2 <- datos2[!is.na(datos2$Emi2), ]
+	ggplot(datos2, aes(Emi2)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95)) + 
+	  coord_flip()
+	@
+	\caption{Seguna emisora que se escucha}
+	\end{figure}
+	De la segunda emisora que mas se escucha se identifico que tambien son Espinar y Laramani.\\
+	\\
+	El horario que los encuestados prefieren escuchar es el siguiente:
+	\begin{figure}[H]
+	\centering
+	<<five, echo = FALSE, fig.width=8, fig.height=5>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#table(datos2$emisora.2.horario)
+	datos2$emisora.2.horario[datos2$emisora.2.horario == ""] <- NA
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "05:07:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "05:08:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "06:07:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "06:08:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "01:14:00 p. m."] <- "13:00:00 p. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "06:00:00 p. m."] <- "18:00:00 p. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "08:00:00 p. m."] <- "20:00:00 p. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "04:08:00 a. m."] <- "04:00:00 a. m."
+	
+	
+	#table(datos2$emisora.2.horario)
+	
+	
+	#probando eliminando NA
+	datos2$emisora.2.horario <- substr(datos2$emisora.2.horario, 1, nchar(datos2$emisora.2.horario)- 9)
+	
+	datos2 <- datos2[!is.na(datos2$emisora.2.horario), ]
+	ggplot(datos2, aes(emisora.2.horario)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	
+	
+	@
+	\caption{Horario de emisora preferida}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	<<six, echo = FALSE, fig.width=8, fig.height=4>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$Emi2[datos2$Emi2 == ""] <- NA
+	#table(datos2$Emi2)
+	
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "Cadena sur (Espinar)"] <- "Espinar"
+	
+	#datos2$emisora.2.horario[datos2$emisora.2.horario == ""] <- "no escucha"
+	datos2$emisora.2.horario[datos2$emisora.2.horario == ""] <- NA
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "05:07:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "05:08:00 a. m."] <- "05:00:00 a. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "06:07:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "06:08:00 a. m."] <- "06:00:00 a. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "01:14:00 p. m."] <- "13:00:00 p. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "06:00:00 p. m."] <- "18:00:00 p. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "08:00:00 p. m."] <- "20:00:00 p. m."
+	datos2$emisora.2.horario[datos2$emisora.2.horario == "04:08:00 a. m."] <- "04:00:00 a. m."
+	
+	datos2$emisora.2.horario <- substr(datos2$emisora.2.horario, 1, nchar(datos2$emisora.2.horario)- 9)
+	
+	datos2 <- datos2[!is.na(datos2$Emi2), ]
+	datos2 <- datos2[!is.na(datos2$emisora.2.horario), ]
+	
+	ggplot(datos2, aes(emisora.2.horario, Emi2)) +
+	  geom_count(colour = rgb(0.36, 0.79, 0.95)) + 
+	  scale_size_area()
+	#View(datos2)
+	@
+	\caption{Emisoras y horarios preferidos}
+	\end{figure}
+	Se observa que aca tambien el horario preferido para escuchar la segunda emisora es a las 19:00 horas
+	
+	
+	\section{Datos agropecuarios}
+	De la actividad agropecuaria, se pregunto que cultivos como primera opcion realizan, de lo cual se obtuvo la siguiente informacion:
+	\begin{figure}[H]
+	\centering
+	<<seven, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#table(datos2$cultivo1)
+	
+	datos2$cultivo1[datos2$cultivo1 == ""] <- NA
+	datos2$cultivo1[datos2$cultivo1 == "Ninguno"] <- NA
+	datos2$cultivo1[datos2$cultivo1 == "Papa"] <- "papa"
+	datos2$cultivo1[datos2$cultivo1 == "No"] <- "Ninguno"
+	
+	
+	#datos2$cultivo1[datos2$cultivo1 == "avena"] <- "Avena"
+	
+	datos2 <- datos2[!is.na(datos2$cultivo1), ]
+	ggplot(datos2, aes(cultivo1)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+
+	#table(datos2$cultivo1)
+	
+	@
+	\caption{Cultivo al que se dedican las personas}
+	\end{figure}
+	Se observa que el cultivo que a la que las personas se dedican en mayor proporcion es avena, seguido de papa y trebol.\\
+	\\
+	De la cantidad de cultivo se tiene lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<eight, echo = FALSE, fig.width=8, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	
+	
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$qcultivo1[datos2$qcultivo1 == ""] <- NA
+	datos2$qcultivo1[datos2$qcultivo1 == "Tres surcos"] <- NA
+	datos2$cultivo1[datos2$cultivo1 == ""] <- NA
+	datos2$cultivo1[datos2$cultivo1 == "Ninguno"] <- NA
+	datos2$cultivo1[datos2$cultivo1 == "Papa"] <- "papa"
+	datos2$cultivo1[datos2$cultivo1 == "No"] <- "Ninguno"
+	
+	#table(datos2$qcultivo1)
+	#table(datos2$qcultivo1)
+	datos2$qcultivo1 <- as.numeric(datos2$qcultivo1)
+	datos2 <- datos2[!is.na(datos2$qcultivo1), ]
+	
+	ggplot(datos2, aes(qcultivo1)) +
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Primera opcion de cultivo en \comunidad \- en cantidades}
+	\end{figure}
+	
+	Se observa que el cultivo que mas se realiza es la avena del cual se tiene la cantidad de cultivo que mas se practica es en 5000.
+	\begin{figure}[H]
+	\centering
+	<<oneh, echo = FALSE, fig.width=8, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	datos2$qcultivo1[datos2$qcultivo1 == ""] <- NA
+	datos2$qcultivo1[datos2$qcultivo1 == "Tres surcos"] <- NA
+	
+	datos2$cultivo1[datos2$cultivo1 == ""] <- NA
+	datos2$cultivo1[datos2$cultivo1 == "Papa"] <- "papa"
+	datos2$cultivo1[datos2$cultivo1 == "No"] <- "Ninguno"
+	
+	#datos2<- datos2[!is.na(datos2$cultivo1), !is.na(datos2$qcultivo1), ]
+	datos2$qcultivo1 <- as.numeric(datos2$qcultivo1)
+	datos2 <- datos2[!is.na(datos2$cultivo1), ]
+	datos2 <- datos2[!is.na(datos2$qcultivo1), ]
+	
+	ggplot(datos2, aes(cultivo1, qcultivo1)) + 
+	  geom_count(colour = rgb(0.36, 0.79, 0.95)) + 
+	  scale_size_area()
+	
+	#View(datos2)
+	
+	@
+	\caption{Cantidad de cultivo por producto}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	<<twelve, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#viendo los datos de la variable mcultivo2
+	#table(datos2$mcultivo2)
+
+	#reemplazando los valores vacios en NA
+	datos2$mcultivo1[datos2$mcultivo1 == ""] <- NA
+	
+	#probando eliminando NA
+	datos2 <- datos2[!is.na(datos2$mcultivo1), ]
+	ggplot(datos2, aes(mcultivo1)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Metodo de cultivo de la primera opcion de cultivo}
+	\end{figure}
+	
+	De la actividad agropecuaria, se pregunto que cultivos como segunda opcion realizan, de lo cual se obtuvo la siguiente informacion:
+	\begin{figure}[H]
+	\centering
+	<<nine, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	datos2$cultivo2[datos2$cultivo2 == ""] <- NA
+	datos2$cultivo2[datos2$cultivo2 == "no"] <- NA
+	datos2$cultivo2[datos2$cultivo2 == "ninguno"] <- "no"
+	
+	
+	datos2 <- datos2[!is.na(datos2$cultivo2), ]
+	ggplot(datos2, aes(cultivo2)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	
+
+	
+	
+	@
+	\caption{Cultivo al que se dedican las personas como segunda opcion}
+	\end{figure}
+	Se observa que el cultivo que a la que las personas se dedican en mayor proporcion es avena, seguido de papa y trebol en la misma proporcion.\\
+	\\
+	De la cantidad de cultivo se tiene lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<ten, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$qcultivo2[datos2$qcultivo2 == ""] <- NA
+	datos2$qcultivo2[datos2$qcultivo2 == "En proyecto"] <- NA
+	datos2$qcultivo2[datos2$qcultivo2 == "No sabe"] <- NA
+	datos2$cultivo2[datos2$cultivo2 == ""] <- "Ninguna"
+	datos2$cultivo2[datos2$cultivo2 == "no"] <- NA
+	datos2$cultivo2[datos2$cultivo2 == "ninguno"] <- NA
+	
+	datos2$qcultivo2 <- as.numeric(datos2$qcultivo2)
+	datos2 <- datos2[!is.na(datos2$qcultivo2), ]
+	datos2 <- datos2[!is.na(datos2$cultivo2), ]
+	
+	ggplot(datos2, aes(cultivo2, qcultivo2), na.rm = TRUE) +
+	  geom_count(colour = rgb(0.36, 0.79, 0.95)) +
+	  scale_size_area()
+	  
+	
+	
+	@
+	\caption{Cantidad de cultivo de la segunda opcion de cultivo en \comunidad}
+	\end{figure}
+	Se observa que el cultivo que mas se realiza es la avena del cual se tiene la cantidad de cultivo que mas se practica es en 5000. Y en la cantidad de 500 se repite para evena y papa.
+	\begin{figure}[H]
+	\centering
+	<<eleven, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#viendo los datos de la variable mcultivo2
+	#table(datos2$mcultivo2)
+
+	#reemplazando los valores vacios en NA
+	datos2$mcultivo2[datos2$mcultivo2 == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$mcultivo2), ]
+	ggplot(datos2, aes(mcultivo2)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Metodo de cultivo de la segunda opcion de cultivo en \comunidad}
+	\end{figure}
+	
+	
+	De la actividad agropecuaria, se pregunto que animales cria segunda opcion, de lo cual se obtuvo la siguiente informacion:
+	\begin{figure}[H]
+	\centering
+	<<fifteen, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	table(datos2$animal1)
+	
+	datos2$animal1[datos2$animal1 == ""] <- NA
+	datos2$animal1[datos2$animal1 == "Ninguno"] <- NA
+	datos2$animal1[datos2$animal1 == "Vacas"] <- "Vaca"
+	
+	
+	
+	
+	datos2 <- datos2[!is.na(datos2$animal1), ]
+	ggplot(datos2, aes(animal1)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+
+	
+	
+	@
+	\caption{Animales al que se dedican las personas como primera opcion}
+	\end{figure}
+	Se observa que la crianza a la que las personas se dedican en mayor proporcion es alpaca, seguida de ovejas en menor proporcion.\\
+	\\
+	De la cantidad de animales que crian se tiene lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<sixteen, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$animal1[datos2$animal1 == ""] <- NA
+	datos2$animal1[datos2$animal1 == "alpaca"] <- "Alpaca"
+	datos2$animal1[datos2$animal1 == "alpacas"] <- "Alpaca"
+	datos2$animal1[datos2$animal1 == "Ninguno"] <- NA
+	datos2$animal1[datos2$animal1 == "Vacas"] <- "Vaca"
+	
+	
+	#table(datos2$cabezas1)
+	datos2$cabezas1[datos2$cabezas1 == ""] <- NA
+	
+	#convertir una columna de un df de character a numeric 
+	
+	datos2$cabezas1 <- as.numeric(datos2$cabezas1)
+	datos2 <- datos2[!is.na(datos2$animal1),]
+	datos2 <- datos2[!is.na(datos2$cabezas1),]
+	
+	ggplot(datos2, aes(animal1, cabezas1)) +
+	  geom_count(color = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Cantidad de animales criados de primera opcion en funcion a la cantidad y especie en \comunidad}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	<<seventeen, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#viendo los datos de la variable mcultivo2
+	#table(datos2$mcultivo2)
+
+	#reemplazando los valores vacios en NA
+	datos2$tipo.1[datos2$tipo.1 == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$tipo.1), ]
+	ggplot(datos2, aes(tipo.1)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+
+	
+	@
+	\caption{Metodo de crianza de la primera opcion de crianza de animales en \comunidad}
+	\end{figure}
+	
+	
+	De la actividad agropecuaria, se pregunto que animales cria como segunda opcion, de lo cual se obtuvo la siguiente informacion:
+	\begin{figure}[H]
+	\centering
+	<<eighteen, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#table(datos2$animal2)
+	#si hay datos vacios se reemplazara con NA
+	datos2$animal2[datos2$animal2 == ""] <- NA
+	datos2$animal2[datos2$animal2 == "Ovejas"] <- "Oveja"
+	datos2$animal2[datos2$animal2 == "oveja"] <- "Oveja"
+	
+	
+	#table(datos2$animal2)
+	
+	
+	
+	#datos2$animal2[datos2$animal2 == "oveja"] <- "Oveja"
+	datos2 <- datos2[!is.na(datos2$animal2), ]
+	
+	ggplot(datos2, aes(animal2)) +
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	@
+	\caption{Animales al que se dedican las personas como segunda opcion}
+	\end{figure}
+	Se observa que la crianza a la que las personas se dedican en mayor proporcion es oveja, seguida de llamas y alpaca en menor proporcion.\\
+	\\
+	De la cantidad de animales que crian se tiene lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<nineteen, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$animal2[datos2$animal2 == ""] <- NA
+	datos2$animal2[datos2$animal2 == "Ovejas"] <- "Oveja"
+	datos2$animal2[datos2$animal2 == "oveja"] <- "Oveja"
+	datos2$cabezas2 <- as.numeric(datos2$cabezas2)
+	datos2$cabezas2[datos2$cabezas2 == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$cabezas2), ]
+	datos2 <- datos2[!is.na(datos2$animal2), ]
+	ggplot(datos2, aes(animal2, cabezas2)) +
+	  geom_count(color = rgb(0.36, 0.79, 0.95)) +
+	  scale_size_area()
+	
+	@
+	\caption{Cantidad de animales criados de segunda opcion en funcion a la cantidad y especie en \comunidad}
+	\end{figure}
+	
+	\begin{figure}[H]
+	\centering
+	<<twenty, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#viendo los datos de la variable mcultivo2
+	#table(datos2$mcultivo2)
+
+	#reemplazando los valores vacios en NA
+	#table(datos2$tipo.2)
+	
+	datos2$tipo.2[datos2$tipo.2 == ""] <- NA
+	
+	#probando eliminando NA
+	datos2 <- datos2[!is.na(datos2$tipo.2), ] 
+	ggplot(datos2, aes(tipo.2)) + 
+	  geom_bar( fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Metodo de crianza de la segunda opcion de crianza de animales en \comunidad}
+	\end{figure}
+	
+	
+	De la actividad agropecuaria, se pregunto que animales cria como tercera opcion, de lo cual se obtuvo la siguiente informacion:
+	\begin{figure}[H]
+	\centering
+	<<twenty_one, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#table(datos2$animal3)
+	#si hay datos vacios se reemplazara con NA
+	datos2$animal3[datos2$animal3 == ""] <- NA
+	datos2$animal3[datos2$animal3 == "cuy"] <- "Cuy"
+	datos2$animal3[datos2$animal3 == "llama"] <- "Llama"
+	
+	datos2 <- datos2[!is.na(datos2$animal3), ]
+	ggplot(datos2, aes(animal3)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Animales al que se dedican las personas como tercera opcion}
+	\end{figure}
+	Se observa que la crianza a la que las personas se dedican en mayor proporcion es oveja, seguida de llamas y alpaca en menor proporcion.\\
+	\\
+	De la cantidad de animales que crian se tiene lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<twenty_two, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	#datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$animal3[datos2$animal3 == ""] <- NA
+	datos2$animal3[datos2$animal3 == "cuy"] <- "Cuy"
+	datos2$animal3[datos2$animal3 == "oveja"] <- "Oveja"
+	datos2$animal3[datos2$animal3 == "llama"] <- "Llama"
+	datos2$cabezas3 <- as.numeric(datos2$cabezas3)
+	datos2$cabezas3[datos2$cabezas3 == ""] <- NA
+	#class(datos2$cabezas3)
+	datos2 <- datos2[!is.na(datos2$animal3), ]
+	datos2 <- datos2[!is.na(datos2$cabezas3), ]
+	
+	ggplot(datos2, aes(animal3, cabezas3), na.rm = TRUE) +
+	  geom_count(color = rgb(0.36, 0.79, 0.95)) + 
+	  scale_size_area()
+	
+	@
+	\caption{Cantidad de animales criados de tercera opcion en funcion a la cantidad y especie en \comunidad}
+	\end{figure}
+	Del metodo de crianza de esta opcion de animales se tiene lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<twenty_three, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#viendo los datos de la variable mcultivo2
+	#table(datos2$mcultivo2)
+
+	#reemplazando los valores vacios en NA
+	#table(datos2$tipo.3)
+	datos2$tipo.3[datos2$tipo.3 == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$tipo.3), ]
+	ggplot(datos2, aes(tipo.3)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Metodo de crianza de la tercera opcion de crianza de animales en \comunidad}
+	\end{figure}
+	
+	
+	
+	\section{Recurso hidrico}
+	De las personas que acceden al servicio de las qochas se identifico que solo esta cantidad accede al servicio:
+	\begin{figure}[H]
+	\centering
+	<<trece, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#datos2$accrecurso[datos2$accrecurso == "cada cuantos meses"] <- "algunos meses"
+	#datos2$accrecurso[datos2$accrecurso == "algunos meses"] <- NA
+	
+	graph13 <- ggplot(datos2, aes(accrecurso)) +
+  geom_bar( fill = rgb(0.36, 0.79, 0.95), colour = "black") + xlab("") + ylab("Frecuencia")  
+	graph13
+	@
+	\caption{Acceso al recurso}
+	\end{figure}
+	Se puede observar que la mayoria de los pobladores no acceden al recurso en menor medida si.\\
+	\\
+	De los propietarios de la qocha se identifico las siguientes respuestas:
+	\begin{figure}[H]
+	\centering
+	<<catorce, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#reemplazando los valores vacios en NA
+	datos2$propietario[datos2$propietario == ""] <- NA
+	#datos2$propietario[datos2$propietario == "No"] <- "comunal"
+	#datos2$propietario[datos2$propietario == "si"] <- "comunal"
+	
+	datos2 <- datos2[!is.na(datos2$propietario), ]
+	ggplot(datos2, aes(propietario)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	@
+	\caption{Propietario del recurso}
+	\end{figure}
+	Se identifica que la mayoria de los pobladores identifica a la comunidad como propietaria de las qochas en consulta, un porcentaje menor es de propiedad privada y uno muy bajo reconoce como propietario al estado.\\
+	\\
+	Del uso que se da se tiene lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<quince, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	datos2$uso[datos2$uso == ""] <- NA
+	#datos2$uso[datos2$uso == "Estado"] <- NA
+	#datos2$uso[datos2$uso == "no sabe"] <- NA
+	#datos2$uso[datos2$uso == "privado"] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$uso), ]
+	ggplot(datos2, aes(uso)) +
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+
+	
+	@
+	\caption{Uso del recurso}
+	\end{figure}
+	De los pobladores que tienen acceso al uso del recursos, se identifico que todos lo utilizan para forraje y una parte utiliza para siembra y forraje.\\
+	\\
+	Se consulto si los beneficiarios estan satisfechos con el servicio de las qochas y se tuvo como resultado lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<dieciseis, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$satisfecho[datos2$satisfecho == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$satisfecho), ]
+	ggplot(datos2, aes(satisfecho)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	
+	@
+	\caption{Satisfaccion con el uso del recurso}
+	\end{figure}
+	Como se puede observar es mayor la poblacion que esta insatisfecha con el uso del recurso, se concluye que este no cuenta con un nivel adecuado para brindar el servicio.\\
+	\\
+	Se consulto que otra fuente de agua usa en reemplazo del recurso, de los cual se tiene como resultado:
+	\begin{figure}[H]
+	\centering
+	<<diecisiete, echo = FALSE, fig.width=8, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	#table(datos2$Ocaptacion)
+	
+	
+	datos2$Ocaptacion[datos2$Ocaptacion == ""] <- NA
+	datos2$Ocaptacion[datos2$Ocaptacion == "Manantes"] <- "Manante"
+	datos2$Ocaptacion[datos2$Ocaptacion == "Manantial"] <- "Manante"
+	
+	
+	#probando eliminando NA
+	datos2 <- datos2[!is.na(datos2$Ocaptacion), ]
+	ggplot(datos2, aes(Ocaptacion)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95)) + 
+	  coord_flip()
+	
+	
+	@
+	\caption{Otro recurso que suple la oferta del recurso}
+	\end{figure}
+	Se observa que los recursos que reemplazan son embalse y manantial, siendo el segundo el de mayor uso.\\
+	\\
+	Se consulto cual es la razon por la que los usuarios no se sienten satisfechos y se identifico lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<dieciocho, echo = FALSE, fig.width=5, fig.height=5, warning = FALSE, message = FALSE>>=
+	#esta informacion debe ser tratada como data minning
+	#probando un metodo para la nube de palabras:
+	#isntalando el paquete
+  setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	#datos <- read.csv("prueba_uno.csv")
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#install.packages("wordcloud2")
+	#install.packages("tm")
+	#install.packages("SnowballC")
+	#install.packages("RcolorBrewer")
+	#install.packages("webshot")
+	
+	library(wordcloud2)
+	library(tm)
+	library(webshot)
+	#webshot::install_phantomjs()
+  datos2$Razon[datos2$Razon == "no hay mucha agua"] <- "poca agua"
+  datos2$Razon[datos2$Razon == "bajo la cantidad de agua ,"] <- "poca agua"
+  datos2$Razon[datos2$Razon == "agua de lluvia, falta agua"] <- "poca agua"
+  datos2$Razon[datos2$Razon == "bajo la cantidad de agua"] <- "poca agua"
+  datos2$Razon[datos2$Razon == "Hay poca agua"] <- "poca agua"
+  datos2$Razon[datos2$Razon == "No hay mucha agua"] <- "poca agua"
+	datos2$Razon[datos2$Razon == "No hay mucha agua"] <- "poca agua"
+	
+  
+	noNaa <- datos2$Razon[!is.na(datos2$Razon)]
+	frecuencias <- table(noNaa)
+	graph18 <- wordcloud2(data = frecuencias, size = 1.5)
+	graph18
+	
+	#table(datos2$Razon)
+	@
+	\caption{Razon de descontento}
+	\end{figure}
+	Debido a que las respuestas no son alternativas y son abiertas, se opto por utilizar mineria de datos para estas, de la cual se ha identificado que la opinion con mayor frecuencia es que el descontento se debe a la poca disponibilidad de agua.
+	\section{Aspectos socioeconomicos}
+	Se consulto cuantos integrantes de su familia trabajan, de lo cual se tiene la siguiente informacion
+	\begin{figure}[H]
+	\centering
+	<<diecinueve, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$uso[datos2$integrantes == ""] <- NA
+	datos2$uso[datos2$integrantes == "No sabe"] <- NA
+	#datos2$uso[datos2$integrantes == "No sabe"] <- NA
+	
+	#probando eliminando NA
+	datos2 <- datos2[!is.na(datos2$integrantes), ]
+	ggplot(datos2, aes(integrantes)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	#table(datos2$integrantes)
+	@
+	\caption{cantidad de integrantes que trabajan en la familia}
+	\end{figure}
+	Se observa que en la mayoria de familias quienes trabajan son dos integrantes, seguido de tres.\\
+	\\
+  Se consulto el ingreso familiar promedio de la familia de lo cual se tiene lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<veinte, echo = FALSE, fig.width=8, fig.height=5>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$ingresof[datos2$ingresof == ""] <- NA
+	datos2$ingresof[datos2$ingresof == "No sabe"] <- NA
+	datos2$ingresof <- as.numeric(datos2$ingresof)
+	
+	datos2 <- datos2[!is.na(datos2$ingresof), ]
+	ggplot(datos2, aes(ingresof)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Ingreso promedio de las familias de \comunidad}
+	\end{figure}
+	Se puede observar que las familias tienen como ingreso mensual en promedio 1000\\
+	\\
+	Combinando la cantidad de integrantes que trabajan y el ingreso promedio mensual, se tiene lo siguiente:
+	
+	\begin{figure}[H]
+	\centering
+	<<nose, echo = FALSE, fig.width=5, fig.height=7>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$ingresof[datos2$ingresof == ""] <- NA
+	datos2$ingresof[datos2$ingresof == "No sabe"] <- NA
+	datos2$ingresof <- as.numeric(datos2$ingresof)
+	datos2$uso[datos2$integrantes == ""] <- NA
+	ggplot(datos2, aes(ingresof, integrantes), na.rm = TRUE) +
+	  geom_count(color = rgb(0.36, 0.79, 0.95))
+	
+	
+	
+	@
+	\caption{Ingreso promedio de las familias de \comunidad en funciona a la cantidad de persionas que trabajan}
+	\end{figure}
+
+	\section{Aspectos sociales y culturales}
+	De la religion que los encuestados creen se tiene la siguiente informacion:
+	\begin{figure}[H]
+	\centering
+	<<veintiuno, echo = FALSE, fig.width=5, fig.height=5>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$religion[datos2$religion == ""] <- NA
+	datos2$religion[datos2$religion == "Cristiano"] <- "cristiano"
+	
+	#table(datos2$religion)
+	
+	#probando eliminando NA
+	datos2 <- datos2[!is.na(datos2$religion), ]
+	ggplot(datos2, aes(religion)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	
+	@
+	\caption{Religion de los pobladores de \comunidad}
+	\end{figure}
+	Se puede observar que la mayoria de los encuestados es de religion catolica y otras, en menor proporcion, seguido de Cristiano.\\
+	\\
+	De la pregunta respecto a si alguna organizacion cultural se dedica a la realizacion de las actividades de las qochas
+	\begin{figure}[H]
+	\centering
+	<<veintidos, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$orcultural[datos2$orcultural == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$orcultural), ]
+	ggplot(datos2, aes(orcultural)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	@
+	\caption{Organizacion dedicada a actividades culturales en la qocha}
+	\end{figure}
+	Se observa que la mayoria de los pobladores indica que no existe alguna organizacion dedicada a la realizacion de actividades culturales en la qocha, mientras que solo una persona indica que si.  
+	\section{Aspectos de gestion}
+	De la consulta de la existencia de algun comite encargardo del funcionamiento de la qocha se obtuvo lo siguiente:
+	\begin{figure}[H]
+	\centering
+	<<veintitres, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$uso[datos2$comite == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$comite), ]
+	ggplot(datos2, aes(comite)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Comite encargado de la gestion del uso de la qocha en \comunidad}
+	\end{figure}
+	Se observa que la mayoria de los encuestados indican que no existe un comite de gestion encargado del uso de la qocha.\\
+	\\
+	Existe alguna organizacion externa dedicada al cuidado de la qocha, de la cual se tiene la siguiente respuesta
+	\begin{figure}[H]
+	\centering
+	<<veintiseis, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$externacui[datos2$externacui == ""] <- NA
+	datos2$externacui[datos2$externacui == "Municipalidad Distrital"] <- NA
+	
+	
+	datos2 <- datos2[!is.na(datos2$externacui), ]
+	ggplot(datos2, aes(externacui)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+
+	@
+	\caption{Organizacion externa encargada del cuidado de la qocha}
+	\end{figure}
+	Se observa que todos los encuestados indican que no existe una organizacion externa encargada del cuidado de qochas en \comunidad.\\
+	\\
+	Se explico informacion respecto a los beneficios del proyecto, por lo que se consulto si la persona estaria dispuesta en apoyar durante la fase de funcionamiento que comprende la operacion y mantenimiento, de lo cual se tiene la siguiente respuesta:
+	\begin{figure}[H]
+	\centering
+	<<veintisiete, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$apoyo[datos2$apoyo == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$apoyo), ]
+	ggplot(datos2, aes(apoyo)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	
+	#para hacer un pie chart, es posible omitiendo los NA
+	#graph27 <- ggplot(datos2, aes(apoyo, fill = apoyo), na.rm = TRUE) +
+	  #geom_bar() + xlab("Titulo en vertical") + ylab("Titulo en horizontal") +
+	  #coord_polar()
+	#graph27 + theme_minimal()
+	@
+	\caption{Disposicion de apoyo durante la ejecucion del proyecto}
+	\end{figure}
+	Se observa que la mayoria de los encuestados estarian dispuestos a apoyar durante la fase de ejecucion del proyecto.\\
+	\\
+	Explicada la constitucion de un comite encargado de la etapa de funcionamiento del proyecto se consulto la predisposicion de los encuestados a pagar una cuata maxima, de la cual se obtuvo las siguientes cantidades:
+	\begin{figure}[H]
+	\centering
+	<<veintiocho, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$cuotaapoyo[datos2$cuotaapoyo == ""] <- NA
+	
+	#si es posible omitir NA, pero por la uniformidad se utilizara las barras
+	#graph28 <- ggplot(datos2, aes(cuotaapoyo, fill = cuotaapoyo), na.rm = TRUE) +
+	#  geom_bar() + xlab("Titulo en vertical") + ylab("Titulo en horizontal") +
+	#  coord_polar()
+	#graph28 + theme_minimal()
+	
+	datos2 <- datos2[!is.na(datos2$cuotaapoyo), ]
+	ggplot(datos2, aes(cuotaapoyo)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	@
+	\caption{Disposicion a pagar cuota durante el periodo de funcionamiento del proyecto}
+	\end{figure}
+	Se puede observar que entre quienes esten dispuestos a pagar y no, la proporcion es muy cercana, siendo mas alta quienes si apoyarian, solo por una persona.\\
+	\\
+	De la consulta respecto a la percepcion de un adecuado uso de las qochas por parte de las personas, se tiene la siguiente informacion:
+	\begin{figure}[H]
+	\centering
+	<<veintinueve, echo = FALSE, fig.width=5, fig.height=3>>=
+	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	library(stringr)
+	library(ggplot2)
+
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	#modifica aquellos valores vacios por NA.
+	datos2$usoadecuado[datos2$usoadecuado == ""] <- NA
+	
+	datos2 <- datos2[!is.na(datos2$usoadecuado), ]
+	ggplot(datos2, aes(usoadecuado)) + 
+	  geom_bar(fill = rgb(0.36, 0.79, 0.95))
+	
+	
+	@
+	\caption{Percepcion de uso adecuado de las qochas}
+	En este caso las dos alternativas son muy cercanas en proporcion, ganando por un reducido margen un uso adecuado.
+	\end{figure}
+	En este caso 
+	\section{Aspectos de medio ambiente}
+	Perjuicio en la actividad agropecuaria debido al cambio climatico
+	\begin{figure}[H]
+	\centering
+	<<treinta, echo = FALSE, fig.width=4, fig.height=4, warning = FALSE, message = FALSE>>=
+  setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	
+	
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	#install.packages("wordcloud2")
+	#install.packages("tm")
+	#install.packages("SnowballC")
+	#install.packages("RcolorBrewer")
+	#install.packages("webshot")
+	
+	library(wordcloud2)
+	library(tm)
+	library(webshot)
+	#webshot::install_phantomjs(force = TRUE)
+  
+	#datos2$Climatico[datos2$Climatico == "si"] <- NA
+  
+	
+	noNaa <- datos2$Climatico[!is.na(datos2$Climatico)]
+	frecuencias <- table(noNaa)
+	graph18 <- wordcloud2(data = frecuencias, size = 3)
+	graph18
+	@
+	\caption{Perjuicio en la actividad agropecuaria debido al cambio climatico}
+	\end{figure}
+	Como se aprecia los perjuicios producidos por el cambio climatico identificados por los encuestados son los siguientes: no hay nevados, poca agua, friaje y menor produccion.\\
+	\\
+	Especies de flora identificadas en la qocha
+	
+	\begin{figure}[H]
+	\centering
+	<<treintayuno, echo = FALSE, fig.width=5, fig.height=5, warning = FALSE, message = FALSE>>=
+  setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	
+	
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	library(wordcloud2)
+	library(tm)
+	library(webshot)
+	#webshot::install_phantomjs(force = TRUE)
+  
+	datos2$Flora[datos2$Flora == "si"] <- NA
+  #datos2$Flora[datos2$Flora == "nevada aumento"] <- NA
+  datos2$Flora[datos2$Flora == "ninguno"] <- NA
+	datos2$Flora[datos2$Flora == "Ninguno"] <- NA
+  
+	noNaa <- datos2$Flora[!is.na(datos2$Flora)]
+	frecuencias <- table(noNaa)
+	graph18 <- wordcloud2(data = frecuencias, size = 1.5)
+	graph18
+	@
+	\caption{Especies de flora identificadas en la qocha}
+	\end{figure}
+	Se puede observar que las especies de flora identificadas es Ch'inki y Pasto, mientras que las demas son Ichu, Totora y Ajuya.\\
+	\\
+	Especies de fauna identificadas en la qocha
+	\begin{figure}[H]
+	
+	\centering
+	<<treintaydos, echo = FALSE, fig.width=5, fig.height=5, warning = FALSE, message = FALSE>>=
+  setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	
+	
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	library(wordcloud2)
+	library(tm)
+	library(webshot)
+  
+	#datos2$Flora[datos2$Flora == "patos"] <- "pato"
+  
+	noNaa <- datos2$Fauna[!is.na(datos2$Fauna)]
+	frecuencias <- table(noNaa)
+	graph18 <- wordcloud2(data = frecuencias, size = 1.5)
+	graph18
+	@
+	\caption{Especies de fauna identificadas en la qocha}
+	\end{figure}
+	Se observa que la especie de fauna identificada coon mayor frecuencia es Pato, seguido de Huallata y Parihuanas.\\
+	\\
+	Especies vegetales nativas en extincion.
+	\begin{figure}[H]
+	\centering
+	<<treintaytres, echo = FALSE, fig.width=5, fig.height=5, warning = FALSE, message = FALSE>>=
+  setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	
+	
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	library(wordcloud2)
+	library(tm)
+	library(webshot)
+  
+	#datos2$Vegper[datos2$Vegper == "ninguno"] <- NA
+	#datos2$Vegper[datos2$Vegper == "pato"] <- NA
+	datos2$Vegper[datos2$Vegper == "chalhua"] <- NA
+  
+	noNaa <- datos2$Vegper[!is.na(datos2$Vegper)]
+	frecuencias <- table(noNaa)
+	graph18 <- wordcloud2(data = frecuencias, size = 1.5)
+	graph18
+	@
+	\caption{Especies vegetales en extincion}
+	\end{figure}
+	De las especies vegetales en peligrro de extincion, se ha identificado a la Yareta, Q'oya y Chinki.\\
+	\\
+	Modificaciones identificadas en la turba de la qocha.
+	\begin{figure}[H]
+	\centering
+	<<treintaycuatro, echo = FALSE, fig.width=5, fig.height=5, warning = FALSE, message = FALSE>>=
+  setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	library(wordcloud2)
+	library(tm)
+	library(webshot)
+	datos2$Turba[datos2$Turba == "esta desapareciendo"] <- "Esta desapareciendo"
+	datos2$Turba[datos2$Turba == "se esta desapareciendo"] <- "Esta desapareciendo"
+	datos2$Turba[datos2$Turba == "Se esta desapareciendo"] <- "Esta desapareciendo"
+	datos2$Turba[datos2$Turba == "se han secado"] <- "Se esta secando"
+	datos2$Turba[datos2$Turba == "seca"] <- "Se seca"
+	datos2$Turba[datos2$Turba == "Seco"] <- "Se seca"
+	#datos2$Turba[datos2$Turba == "se esta secando"] <- "se seca"
+	
+	noNaa <- datos2$Turba[!is.na(datos2$Turba)]
+	frecuencias <- table(noNaa)
+	graph18 <- wordcloud2(data = frecuencias, size = 1.5)
+	graph18
+	@
+	\caption{Alteraciones de la turba en la qocha}
+	\end{figure}
+	Se observa que los pobladores identifican que la turba se esta secando y desapareciendo.\\
+	\\
+	Alteraciones en la precipitacion pluvial en la zona de la qocha
+	\begin{figure}[H]
+	\centering
+	<<treintaycinco, echo = FALSE, fig.width=5, fig.height=5, warning = FALSE, message = FALSE>>=
+  setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	library(wordcloud2)
+	library(tm)
+	library(webshot)
+  
+	datos2$Lluvia[datos2$Lluvia == "ninguno"] <- "Ninguno"
+	#datos2$Lluvia[datos2$Lluvia == "menos lluvias"] <- "menos lluvia"
+  
+	noNaa <- datos2$Lluvia[!is.na(datos2$Lluvia)]
+	frecuencias <- table(noNaa)
+	graph18 <- wordcloud2(data = frecuencias, size = 1.5)
+	graph18
+	@
+	\caption{Alteraciones pluviales en las zonas de qochas}
+	\end{figure}
+	La mayor alteracion pluvial que se ha indetificado es que hay menos lluvias en la zona de las qochas. \\
+	\\
+	Alteraciones en el suelo en la zona de la qocha
+		\begin{figure}[H]
+	\centering
+	<<treintayseis, echo = FALSE, fig.width=5, fig.height=5, warning = FALSE, message = FALSE>>=
+  setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
+	datos <- read.csv("ask.csv")
+	datos$Comunidad <- trimws(datos$Comunidad)
+	#para eliminar los espacios en blanco de
+	datos <- data.frame(lapply(datos, trimws))
+	datos2 <- subset(datos, Comunidad == "huayllahuaylla")
+	
+	library(wordcloud2)
+	library(tm)
+	library(webshot)
+  
+	#datos2$Lluvia[datos2$Lluvia == "mas luvia"] <- "mas lluvia"
+	
+	#datos2$Lluvia[datos2$Lluvia == "menos lluvias"] <- "menos lluvia"
+  
+	noNaa <- datos2$Lluvia[!is.na(datos2$Lluvia)]
+	frecuencias <- table(noNaa)
+	graph18 <- wordcloud2(data = frecuencias, size = 1.5)
+	graph18
+	
+	View(datos2)
+	
+	#table(datos2$Lluvia)
+	
+	@
+	\caption{Alteraciones en el suelo de las zonas de qochas}
+	\end{figure}
+	
+	\begin{center}
+		\textbf{Atentamente}
+	\end{center}
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.35]{H:/Gore Cusco/img/firma}
+	\end{figure}
+	\thispagestyle{lastpage}
+
+
+
+
+\end{document}
