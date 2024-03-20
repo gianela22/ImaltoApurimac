@@ -1,0 +1,940 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.14)  15 DEC 2023 09:52
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./reporte1.tex
+(reporte1.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-12-08>
+(settings/paquetes.tex
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+) (C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/12/06 v3.98 The Babel package
+\babel@savecnt=\count195
+\U@D=\dimen143
+\l@unhyphenated=\language79
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count196
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
+df
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks18
+\es@quotdepth=\count197
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel
+-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip50
+\multirow@cntb=\count198
+\multirow@dima=\skip51
+\bigstrutjot=\dimen144
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen145
+\ar@mcellbox=\box51
+\extrarowheight=\dimen146
+\NC@list=\toks21
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box52
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count199
+\Gm@cntv=\count266
+\c@Gm@tempcnt=\count267
+\Gm@bindingoffset=\dimen147
+\Gm@wd@mp=\dimen148
+\Gm@odd@mp=\dimen149
+\Gm@even@mp=\dimen150
+\Gm@layoutwidth=\dimen151
+\Gm@layoutheight=\dimen152
+\Gm@layouthoffset=\dimen153
+\Gm@layoutvoffset=\dimen154
+\Gm@dimlist=\toks22
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks23
+\minrowclearance=\skip63
+\rownum=\count268
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/datetime2\datetime2.sty
+Package: datetime2 2021/03/21 v1.5.7 (NLCT) date and time formats
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklang.sty
+Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.t
+ex))
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count269
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count270
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-spanish\datet
+ime2-spanish.ldf
+File: datetime2-spanish.ldf 2017/11/13 v1.1
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/datetime2-spanish\datet
+ime2-spanish-ascii.ldf
+File: datetime2-spanish-ascii.ldf 2017/11/13 v1.1
+)))
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks26
+\SOUL@lasttoken=\toks27
+\SOUL@syllable=\toks28
+\SOUL@cmds=\toks29
+\SOUL@buffer=\toks30
+\SOUL@token=\toks31
+\SOUL@syllgoal=\dimen155
+\SOUL@syllwidth=\dimen156
+\SOUL@charkern=\dimen157
+\SOUL@hyphkern=\dimen158
+\SOUL@dimen=\dimen159
+\SOUL@dimeni=\dimen160
+\SOUL@minus=\count271
+\SOUL@comma=\count272
+\SOUL@apo=\count273
+\SOUL@grave=\count274
+\SOUL@spaceskip=\skip64
+\SOUL@ttwidth=\dimen161
+\SOUL@uldp=\dimen162
+\SOUL@ulht=\dimen163
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)) (C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count275
+\float@exts=\toks32
+\float@box=\box53
+\@float@everytoks=\toks33
+\@floatcapt=\box54
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count276
+\calc@Bcount=\count277
+\calc@Adimen=\dimen164
+\calc@Bdimen=\dimen165
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count278
+\calc@Cskip=\skip67
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen166
+\ESO@tempdimb=\dimen167
+)
+\AM@pagewidth=\dimen168
+\AM@pageheight=\dimen169
+\AM@fboxrule=\dimen170
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count279
+\AM@pagebox=\box55
+\AM@global@opts=\toks34
+\AM@pagecnt=\count280
+\AM@toc@title=\toks35
+\AM@lof@heading=\toks36
+\c@AM@survey=\count281
+\AM@templatesizebox=\box56
+) (C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip68
+\enit@outerparindent=\dimen171
+\enit@toks=\toks37
+\enit@inbox=\box57
+\enit@count@id=\count282
+\enitdp@description=\count283
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.s
+ty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box58
+)
+\tc@llx=\dimen172
+\tc@lly=\dimen173
+\tc@urx=\dimen174
+\tc@ury=\dimen175
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen176
+\adjbox@Height=\dimen177
+\adjbox@Depth=\dimen178
+\adjbox@Totalheight=\dimen179
+\adjbox@pwidth=\dimen180
+\adjbox@pheight=\dimen181
+\adjbox@pdepth=\dimen182
+\adjbox@ptotalheight=\dimen183
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count284
+) (C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box59
+\sift@deathcycles=\count285
+\@vwid@loff=\dimen184
+\@vwid@roff=\dimen185
+)) (C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen186
+\captionmargin=\dimen187
+\caption@leftmargin=\dimen188
+\caption@rightmargin=\dimen189
+\caption@width=\dimen190
+\caption@indent=\dimen191
+\caption@parindent=\dimen192
+\caption@hangindent=\dimen193
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count286
+\c@continuedfloat=\count287
+Package caption Info: float package is loaded.
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+Package: lastpage 2023/10/14 v2.0e lastpage: 2.09 or 2e? (HMM)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage2e.sty
+Package: lastpage2e 2023/10/14 v2.0e Decide which 2e lastpage version to use (H
+MM)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpagemodern
+.sty
+Package: lastpagemodern 2023-10-14 v2.0e Refers to last page's name (HMM; JPG)
+\c@lastpagecount=\count288
+) 
+))) (C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip69
+\LTright=\skip70
+\LTpre=\skip71
+\LTpost=\skip72
+\LTchunksize=\count289
+\LTcapwidth=\dimen194
+\LT@head=\box60
+\LT@firsthead=\box61
+\LT@foot=\box62
+\LT@lastfoot=\box63
+\LT@gbox=\box64
+\LT@cols=\count290
+\LT@rows=\count291
+\c@LT@tables=\count292
+\c@LT@chunks=\count293
+\LT@p@ftn=\toks38
+) (settings/comandos.tex) (settings/enpie.tex) (settings/entornos.tex)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count294
+\l__pdf_internal_box=\box65
+) (reporte1.aux)
+\openout1 = `reporte1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count295
+\scratchdimen=\dimen195
+\scratchbox=\box66
+\nofMPsegments=\count296
+\nofMParguments=\count297
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count298
+\MPscratchDim=\dimen196
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
+\everyMPtoPDFconversion=\toks40
+)
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 528.93675pt, 56.9055pt)
+* v-part:(T,H,B)=(142.26378pt, 567.34795pt, 85.35826pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=528.93675pt
+* \textheight=567.34795pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-68.81723pt
+* \headheight=113.81102pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+
+(C:\Users\PERCY\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
+[1
+
+{C:/Users/PERCY/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+(chunks/uno.tex
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \documentclass
+                  {article}\usepackage[]{graphicx}\usepackage[]{xcolor}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \documentclass{article}\usepackage
+                                      []{graphicx}\usepackage[]{xcolor}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...{article}\usepackage[]{graphicx}\usepackage
+                                                  []{xcolor}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \usepackage
+                {framed}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \usepackage
+                {alltt}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...xists{upquote.sty}{\usepackage{upquote}}{}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \begin{document}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+\kframe ...argin \hskip \columnwidth }\MakeFramed 
+                                                  {\advance \hsize -\width \...
+l.56 ...0.969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\kframe ... }\MakeFramed {\advance \hsize -\width 
+                                                  \@totalleftmargin \z@ \lin...
+l.56 ...0.969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \global 
+l.56 ...0.969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \global 
+l.56 ...0.969, 0.969}\color{fgcolor}\begin{kframe}
+                                                  
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+! LaTeX Error: Environment alltt undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \begin{alltt}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Argument of \language@active@arg" has an extra }.
+<inserted text> 
+                \par 
+l.59 \hlkwd{data}\hlstd{(}\hlstr{"msleep"}
+                                          \hlstd{)}
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \language@active@arg" was complete.
+<to be read again> 
+                   \par 
+l.59 \hlkwd{data}\hlstd{(}\hlstr{"msleep"}
+                                          \hlstd{)}
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: \begin{kframe} on input line 56 ended by \end{alltt}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \end{alltt}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment alltt undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 \begin{alltt}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.68 ...lkwd{aes}\hlstd{(sleep_total, sleep_rem))}
+                                                   \hlopt{+}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 68.
+! Extra }, or forgotten $.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.68 ...lkwd{aes}\hlstd{(sleep_total, sleep_rem))}
+                                                   \hlopt{+}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69   \hlkwd{geom_point}
+                         \hlstd{(}\hlkwc{colour} \hlstd{=} \hlstr{"red"}\hls...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mbox  #1->\leavevmode \hbox {#1}
+                                 
+l.69   \hlkwd{geom_point}
+                         \hlstd{(}\hlkwc{colour} \hlstd{=} \hlstr{"red"}\hls...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\nfss@text #1->{\mbox {#1}}
+                           
+l.69   \hlkwd{geom_point}
+                         \hlstd{(}\hlkwc{colour} \hlstd{=} \hlstr{"red"}\hls...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@textcolor ...otect \leavevmode {\color #1{#2}#3}
+                                                  
+l.69   \hlkwd{geom_point}
+                         \hlstd{(}\hlkwc{colour} \hlstd{=} \hlstr{"red"}\hls...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \begin{kframe} on input line 56 ended by \end{alltt}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \end{alltt}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.70 \end{alltt}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.70 \end{alltt}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.70 \end{alltt}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.70 \end{alltt}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.70 \end{alltt}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.70 \end{alltt}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+\endkframe ->\par \unskip \endMakeFramed 
+                                         \at@end@of@kframe 
+l.73 ...ng values (`geom\_point()`).}}\end{kframe}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: File `figure/unnamed-chunk-1-1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 ...width=\maxwidth]{figure/unnamed-chunk-1-1}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<H:/Gore Cusco/img/peru.png, id=6, 1606.0pt x 1606.0pt>
+File: H:/Gore Cusco/img/peru.png Graphic file (type png)
+<use H:/Gore Cusco/img/peru.png>
+Package pdftex.def Info: H:/Gore Cusco/img/peru.png  used on input line 78.
+(pdftex.def)             Requested size: 34.13623pt x 56.90189pt.
+<H:/Gore Cusco/img/gore.png, id=8, 345.29pt x 147.55125pt>
+File: H:/Gore Cusco/img/gore.png Graphic file (type png)
+<use H:/Gore Cusco/img/gore.png>
+Package pdftex.def Info: H:/Gore Cusco/img/gore.png  used on input line 78.
+(pdftex.def)             Requested size: 65.43718pt x 54.05951pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]|[]\OT1/cmr/bx/n/9 Gobierno
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\OT1/cmr/bx/n/9 Re-gio-nal de
+ []
+
+<H:/Gore Cusco/img/ima.png, id=9, 149.8097pt x 159.59625pt>
+File: H:/Gore Cusco/img/ima.png Graphic file (type png)
+<use H:/Gore Cusco/img/ima.png>
+Package pdftex.def Info: H:/Gore Cusco/img/ima.png  used on input line 78.
+(pdftex.def)             Requested size: 36.98828pt x 54.05988pt.
+
+Overfull \hbox (32.40503pt too wide) has occurred while \output is active
+ [][] 
+ []
+
+<H:/Gore Cusco/img/firma.png, id=10, 440.39531pt x 165.61874pt>
+File: H:/Gore Cusco/img/firma.png Graphic file (type png)
+<use H:/Gore Cusco/img/firma.png>
+Package pdftex.def Info: H:/Gore Cusco/img/firma.png  used on input line 78.
+(pdftex.def)             Requested size: 176.155pt x 66.2463pt.
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 69.84634pt, for example:
+(fancyhdr)                \setlength{\footskip}{69.84634pt}.
+
+[1 <H:/Gore Cusco/img/peru.png> <H:/Gore Cusco/img/gore.png> <H:/Gore Cusco/img
+/ima.png> <H:/Gore Cusco/img/firma.png>]
+
+enddocument/afterlastpage: lastpage setting LastPage.
+(reporte1.aux
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+)
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-12-08>
+ ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package lastpage Warning: Rerun to get the references right on input line 78.
+
+ ) )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 53 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 11484 strings out of 474490
+ 217822 string characters out of 5743812
+ 1932473 words of memory out of 5000000
+ 33596 multiletter control sequences out of 15000+600000
+ 560117 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,23n,120p,573b,500s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/PERCY/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb><C:/Users/PERCY/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><C:/Users/PERCY/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/PERCY/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/PERCY/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/PERCY/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/PE
+RCY/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
+/Users/PERCY/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb>
+Output written on reporte1.pdf (2 pages, 1242236 bytes).
+PDF statistics:
+ 58 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

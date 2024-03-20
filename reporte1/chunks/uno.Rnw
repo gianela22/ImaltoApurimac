@@ -1,0 +1,14 @@
+\documentclass{article}
+
+\begin{document}
+
+<<>>=
+library(ggplot2)
+data("msleep")
+names(msleep)
+ggplot(msleep, aes(sleep_total, sleep_rem)) +
+  geom_point(colour = "red")
+@
+
+
+\end{document}
