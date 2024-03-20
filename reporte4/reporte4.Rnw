@@ -19,6 +19,7 @@
 	\begin{figure}[H]
 	\centering
 	<<uno, echo = FALSE, fig.width=4, fig.height=3>>=
+	#aca se esta verificando el codigo
 	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
 	datos <- read.csv("ask.csv")
 	datos$Comunidad <- trimws(datos$Comunidad)
