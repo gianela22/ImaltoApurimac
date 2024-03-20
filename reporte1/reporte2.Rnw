@@ -11,7 +11,7 @@
 \newpage
 \listoffigures
 \newpage
-
+#prueba
 	La encuesta se realizo en la comunidad campesina de \comunidad\- del distrito de distrito, provincia de provincia departamento del Cusco.\\
 	\\
 	Para esto se considero informacion general de la poblacion, tomando en cuenta el genero, la edad y el recurso que utilizan, en este caso si usan qocha.\\
