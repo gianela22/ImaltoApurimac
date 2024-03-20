@@ -20,6 +20,7 @@
 	\centering
 	<<uno, echo = FALSE, fig.width=4, fig.height=3>>=
 	#prueba uno
+	#prueba dos
 	setwd("H:/Gore Cusco/IMA/pi alto apurimac/proyecto/encuesta")
 	datos <- read.csv("ask.csv")
 	datos$Comunidad <- trimws(datos$Comunidad)
