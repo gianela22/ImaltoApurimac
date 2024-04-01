@@ -35,7 +35,7 @@
 	@
 	\caption{Sexo de los encuestados de \comunidad}
 	\end{figure}
-	Se observa que las cantidades son casi similares, de la cual se observa que los de genero masculino es mayor.
+	Se observa que las cantidades son iguales, esto nos indica que tenemos la misma cantidad de poblacion en ambos generos.\\
 	\section{Datos generales}
 	Edad de los encuestados, de la encuesta realizada se tiene la edad de los participantes, como se muestra a continuacion:
 	\begin{figure}[H]
@@ -63,9 +63,9 @@
 	
 	
 	
-	Se puede observar que el rango de edades va desde 31 hasta 75, siendo la edad de mayor frecuencia la de 42
+	Se puede observar que el rango de edades de las personas encuestadas va desde 26 hasta 82 años de edad, siendo la edad de mayor frecuencia la de 49, 51 y 54 años entre varones y mujeres,esto nos sugiere que la poblacion esta en la etapa de la adultez, podria indicar que la comunidad tiene una poblacion productiva y experimentada en la toma de decisiones.
 	\section{Informacion sobre la vivienda}
-Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuestados, de la cual se oberva que el 100\% es propia, como se puede observar en la grafica:
+Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuestados, de la cual se oberva que el 99% es propia, como se puede observar en la grafica:
 	\begin{figure}[H]
 	\centering
 	<<tres, echo = FALSE, fig.width=5, fig.height=3>>=
@@ -105,7 +105,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Años de permanencia de los pobladores en \comunidad}
 	\end{figure}
-	Se observo que los años que habitan los pobladores van desde 2 a 73, los años que tienen mas frecuencia son de 50 y 20.
+	Se observa que los años que habitan los pobladores van desde 2 a 82, el año que tiene mas frecuencia es 50, esto sugiere que la mayoria de las personas han estado viviendo en sus casas durante un largo período de tiempo.\\
 	
 	Del idioma que los encuestados se identifico que que la mayoria habla español y quechua, como se grafica:
 	\begin{figure}[H]
@@ -126,7 +126,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Idioma que habla el poblador}
 	\end{figure}
-	Se observa que la gran mayoria de los encuestados hablan español y quechua, mientras que solo una pequeña parte habla solo quechua.
+	Se observa que la gran mayoria de los encuestados hablan español y quechua, pero su legua mater es el quechua y se evidencia que tenemos una gran poblacion quechua hablantes.
 	\section{Informacion de servicios}
 	De la fuente de agua que los pobladores se abastecen se identifico lo siguiente:
 	\begin{figure}[H]
@@ -154,7 +154,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Fuente de agua para consumo de agua de los pobladores de \comunidad}
 	\end{figure}
-	La fuente de manantial y rio/laguna son las que proveen de agua para los pobladores, siendo la de menos uso ojo de agua\\
+	Como se observa en el grafico, la fuente de agua mas utilizada es de las captaciones, seguido de rio/laguna y la menos utilizada es de lluvia y qochas, siendo el agua de lluvia la que menos provee de agua porque solo se obtiene en temporada de crecida pluvial\\
 	\\
 	La eliminacion de basura en las viviendas de los pobladores es la siguiente
 	\begin{figure}[H]
@@ -177,7 +177,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Eliminacion de la basura en \comunidad}
 	\end{figure}
-	Los tipos de eliminacion con mayor frecuencia son enterrado y quemado, siendo el menor el uso de hoyo; se observa que el uso del recolector municipal es de los que tienen menos uso.\\
+	Los datos de la gráfica muestra las actividades que realiza las familias para eliminar la basura de sus viviendas, los tipos de eliminacion con mayor frecuencia son enterrado y quemado, siendo el menor el uso del botadero y la compactadora.\\
 	\\
 	Para la preparacion de sus alimentos las personas utilizan los siguientes combustibles:
 	\begin{figure}[H]
@@ -208,7 +208,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Uso de combustible para preparacion de alimentos en \comunidad}
 	\end{figure}
-	Los pobladores usan con mas frecuencia leña, luego gas, seguido de bosta y gas o gas leña; los pobladores indican que tienden a usar gas en las temporadas en las que no es posible obtener leña, se puede decudir que los pobladores tienen mayor preferencia por el uso de leña porque su uso es mas accesible y barato.\\
+	Los pobladores usan con mas frecuencia la bosta, porque su uso es mas accesible y barato pero no es tan amigable con el medio ambiente; como segunda opcion usan la leña y el gas, indican que tienden a usar gas en las temporadas en las que no es posible obtener leña. \\
 	\\
 	Las enfermedades que mas aquejan a la poblacion son las siguientes:
 	\begin{figure}[H]
@@ -236,7 +236,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Enfermedades que aquejan a los pobladores de \comunidad}
 	\end{figure}
-	Se observa que las enfermedades diarreicas son las que mas aquejan a la poblacion, seguida de otras y ninguna.\\
+	Se observa que las enfermedades infecciosas son las que mas aquejan a la poblacion, seguida de enfermedades respiratorias por las altas temperatura.\\
 	\\
 	Las personas que sufren de alguna enfermedad se atienden en los siguientes:
 	\begin{figure}[H]
@@ -267,7 +267,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Lugar de atencion cuando se enferman}
 	\end{figure}
-  Como se puede observar la mayoria de los pobladores se atienden en la posta de salud mas cercana de su residencia.\\
+    Como se puede observar la mayoria de los pobladores se atienden en la posta de salud mas cercana de su residencia, tambien indicaron de manera natural con plantas o se auto medican, y donde menos se hacen atender es en EsSalud, Cusco, Arequipa y boticas.\\
   \\
 	Se consulto si estas personas cuentan con seguro medico, de lo cual se obtuvo el siguiente resultado:
 	\begin{figure}[H]
@@ -295,6 +295,8 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Uso de un seguro medico}
 	\end{figure}
+	Los datos de la grafica se pueden obsevar, que la mayoria de los pobladores si cuentan con seguro medico y muy pocos no tiene, algunos no saben si tienen seguro.\\
+	\\
 	Se consulto respecto a la preferencia de emisoras radiales que se escucha, al respecto se tiene como primera emisora de preferencia la siguiente:
 	\begin{figure}[H]
 	\centering
@@ -321,7 +323,7 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Primera emisora que se escucha}
 	\end{figure}
-	Como se puede observar la emisora con mayor audiencia es Laramani, seguido de emisora Espinar y las demas con menor porcentaje, como son Arequipa, Cadena Sur, Radio municipal, y San Luis.\\
+	Como se puede observar solo se identifico dos emisoras en la comunidad, la que tiene mayor audiencia es Laramani, seguido de emisora Espinar.\\
 	\\
 	El horario que los encuestados prefieren escuchar es el siguiente:
 	\begin{figure}[H]
@@ -358,7 +360,6 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	@
 	\caption{Horario de emisora preferida}
 	\end{figure}
-	
 	\begin{figure}[H]
 	\centering
 	<<three, echo = FALSE, fig.width=7, fig.height=5>>=
@@ -406,7 +407,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Emisoras y horarios preferidos}
 	\end{figure}
-	Como se puede observar todas las emisoras son sintonizadas a las 07:00 horas. Las emisoras que mas se escuchan en ese horario son Laramani y Espinar\\
+	Como se puede observar los horarios mas escuchados son entre las 5:00 am y 6:00 am, Las emisoras que mas se escuchan en es Laramani y las menos sintonizadas es Espinar..\\
 	\\
 	
 	Se consulto respecto a la preferencia de emisoras radiales que se escucha, al respecto se tiene como primera emisora de preferencia la siguiente:
@@ -429,9 +430,9 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	  geom_bar(fill = rgb(0.36, 0.79, 0.95)) + 
 	  coord_flip()
 	@
-	\caption{Seguna emisora que se escucha}
+	\caption{Segunda emisora que se escucha}
 	\end{figure}
-	De la segunda emisora que mas se escucha se identifico que tambien son Espinar y Laramani.\\
+	De la segunda emisora que mas se escucha se identifico es Choquevelille, seguido de Espinar, Laramani, Velille, y las menos sintonizadas son Qorilazo, La Hora, Exitosa, Cadena Sur.\\
 	\\
 	El horario que los encuestados prefieren escuchar es el siguiente:
 	\begin{figure}[H]
@@ -513,9 +514,8 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Emisoras y horarios preferidos}
 	\end{figure}
-	Se observa que aca tambien el horario preferido para escuchar la segunda emisora es a las 19:00 horas
-	
-	
+	Se observa que la emisora Choquevelille es sintonizada a 5:00 am con mayor frecuencia,y las otras emisoras son escuchadas en horarios diferentes. 
+		
 	\section{Datos agropecuarios}
 	De la actividad agropecuaria, se pregunto que cultivos como primera opcion realizan, de lo cual se obtuvo la siguiente informacion:
 	\begin{figure}[H]
@@ -549,7 +549,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Cultivo al que se dedican las personas}
 	\end{figure}
-	Se observa que el cultivo que a la que las personas se dedican en mayor proporcion es avena, seguido de papa y trebol.\\
+	Se observa que el cultivo mas frecuente que las personas se dedican en mayor proporcion es avena ya que se desarrolla bien en terrenos con temperaturas bajas y es mas tolerante a heladas y nubosidades, seguido de papa y hortalizas.\\
 	\\
 	De la cantidad de cultivo se tiene lo siguiente:
 	\begin{figure}[H]
@@ -584,6 +584,8 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	\caption{Primera opcion de cultivo en \comunidad \- en cantidades}
 	\end{figure}
 	
+
+
 	Se observa que el cultivo que mas se realiza es la avena del cual se tiene la cantidad de cultivo que mas se practica es en 5000.
 	\begin{figure}[H]
 	\centering
@@ -644,7 +646,8 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Metodo de cultivo de la primera opcion de cultivo}
 	\end{figure}
-	
+	Como se puede observar todo la poblacion dedicada al cultivo utiliza el metodo de secano donde se utiliza únicamente el agua de lluvia.\\
+	\\
 	De la actividad agropecuaria, se pregunto que cultivos como segunda opcion realizan, de lo cual se obtuvo la siguiente informacion:
 	\begin{figure}[H]
 	\centering
@@ -674,7 +677,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Cultivo al que se dedican las personas como segunda opcion}
 	\end{figure}
-	Se observa que el cultivo que a la que las personas se dedican en mayor proporcion es avena, seguido de papa y trebol en la misma proporcion.\\
+	Se observa que el cultivo que las personas se dedican en mayor proporcion es la avena.\\
 	\\
 	De la cantidad de cultivo se tiene lo siguiente:
 	\begin{figure}[H]
@@ -708,7 +711,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Cantidad de cultivo de la segunda opcion de cultivo en \comunidad}
 	\end{figure}
-	Se observa que el cultivo que mas se realiza es la avena del cual se tiene la cantidad de cultivo que mas se practica es en 5000. Y en la cantidad de 500 se repite para evena y papa.
+	Se observa que el cultivo que realizan es la avena del cual se tiene la cantidad maxima de 10000 kilos.\\
 	\begin{figure}[H]
 	\centering
 	<<eleven, echo = FALSE, fig.width=5, fig.height=3>>=
@@ -733,8 +736,8 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Metodo de cultivo de la segunda opcion de cultivo en \comunidad}
 	\end{figure}
-	
-	
+	Como se observa se utiliza el metodo de secano, por que utiliza  únicamente el agua de lluvia.\\
+	\\
 	De la actividad agropecuaria, se pregunto que animales cria segunda opcion, de lo cual se obtuvo la siguiente informacion:
 	\begin{figure}[H]
 	\centering
@@ -765,7 +768,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Animales al que se dedican las personas como primera opcion}
 	\end{figure}
-	Se observa que la crianza a la que las personas se dedican en mayor proporcion es alpaca, seguida de ovejas en menor proporcion.\\
+	Se observa que la crianza a la que las personas se dedican en mayor proporcion es alpaca, seguida de vaca en menor proporcion.\\
 	\\
 	De la cantidad de animales que crian se tiene lo siguiente:
 	\begin{figure}[H]
@@ -801,7 +804,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Cantidad de animales criados de primera opcion en funcion a la cantidad y especie en \comunidad}
 	\end{figure}
-	
+	Como se observa la cantidad de animales llega a un maximo de 210 cabezas de alpacas, seguida de vacas llegando a 50 cabezas.
 	\begin{figure}[H]
 	\centering
 	<<seventeen, echo = FALSE, fig.width=5, fig.height=3>>=
@@ -827,7 +830,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Metodo de crianza de la primera opcion de crianza de animales en \comunidad}
 	\end{figure}
-	
+	Como se observa el metodo mas practicado es el pastoreo, seguido de  semi estabulado que se basa en el encierro, parcial o total del ganado en un corral para de esta forma darle mejor cuido y alimentación.
 	
 	De la actividad agropecuaria, se pregunto que animales cria como segunda opcion, de lo cual se obtuvo la siguiente informacion:
 	\begin{figure}[H]
@@ -861,7 +864,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Animales al que se dedican las personas como segunda opcion}
 	\end{figure}
-	Se observa que la crianza a la que las personas se dedican en mayor proporcion es oveja, seguida de llamas y alpaca en menor proporcion.\\
+	Se observa que la crianza a la que las personas se dedican en mayor proporcion es oveja, seguida de llamas, caballo y gallina en menor proporcion.\\
 	\\
 	De la cantidad de animales que crian se tiene lo siguiente:
 	\begin{figure}[H]
@@ -890,7 +893,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Cantidad de animales criados de segunda opcion en funcion a la cantidad y especie en \comunidad}
 	\end{figure}
-	
+	Se observa que la oveja se cria en mayor cantidad llegando a las 50 cabezas, seguido de la llama con 20 cabezas, caballo con 7 cabezas, y por ultimo la gallina.
 	\begin{figure}[H]
 	\centering
 	<<twenty, echo = FALSE, fig.width=5, fig.height=3>>=
@@ -918,7 +921,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Metodo de crianza de la segunda opcion de crianza de animales en \comunidad}
 	\end{figure}
-	
+	Como se observa el metodo mas practicado es el pastoreo, seguido de semi estabulado y como ultimo el extensivo.
 	
 	De la actividad agropecuaria, se pregunto que animales cria como tercera opcion, de lo cual se obtuvo la siguiente informacion:
 	\begin{figure}[H]
@@ -946,7 +949,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Animales al que se dedican las personas como tercera opcion}
 	\end{figure}
-	Se observa que la crianza a la que las personas se dedican en mayor proporcion es oveja, seguida de llamas y alpaca en menor proporcion.\\
+	Se observa que la crianza a la que las personas se dedican en mayor proporcion es oveja y la vaca, seguida de llama y caballo en menor proporcion.\\
 	\\
 	De la cantidad de animales que crian se tiene lo siguiente:
 	\begin{figure}[H]
@@ -977,6 +980,8 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Cantidad de animales criados de tercera opcion en funcion a la cantidad y especie en \comunidad}
 	\end{figure}
+	Como se observa la oveja es la que mas se cria llegando a 30 cabezas, la vaca a 10 cabezas, llama 15 cabezas, caballo 2 cabezas.\\
+	\\
 	Del metodo de crianza de esta opcion de animales se tiene lo siguiente:
 	\begin{figure}[H]
 	\centering
@@ -1003,7 +1008,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Metodo de crianza de la tercera opcion de crianza de animales en \comunidad}
 	\end{figure}
-	
+	Como se puede observar el metodo de crianza es el pastoreo, siendo este el unico metodo que practican.\\
 	
 	
 	\section{Recurso hidrico}
@@ -1029,7 +1034,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Acceso al recurso}
 	\end{figure}
-	Se puede observar que la mayoria de los pobladores no acceden al recurso en menor medida si.\\
+	Se puede observar que la mayoria de los pobladores si acceden al recurso en menor medida no.\\
 	\\
 	De los propietarios de la qocha se identifico las siguientes respuestas:
 	\begin{figure}[H]
@@ -1054,7 +1059,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Propietario del recurso}
 	\end{figure}
-	Se identifica que la mayoria de los pobladores identifica a la comunidad como propietaria de las qochas en consulta, un porcentaje menor es de propiedad privada y uno muy bajo reconoce como propietario al estado.\\
+	Se identifica que la mayoria de los pobladores identifica a la comunidad como propietaria de las qochas en consulta, un porcentaje menor es de propiedad privada y comunal, tambien se identifico qochas que no saben quien es el propietario.\\
 	\\
 	Del uso que se da se tiene lo siguiente:
 	\begin{figure}[H]
@@ -1081,7 +1086,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Uso del recurso}
 	\end{figure}
-	De los pobladores que tienen acceso al uso del recursos, se identifico que todos lo utilizan para forraje y una parte utiliza para siembra y forraje.\\
+	De los pobladores que tienen acceso al uso del recursos, se identifico que todos lo utilizan para forraje, son plantas que se cultivan con el fin de alimentar a los animales y una pequeña parte lo utilaza para la siembra.\\
 	\\
 	Se consulto si los beneficiarios estan satisfechos con el servicio de las qochas y se tuvo como resultado lo siguiente:
 	\begin{figure}[H]
@@ -1106,7 +1111,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Satisfaccion con el uso del recurso}
 	\end{figure}
-	Como se puede observar es mayor la poblacion que esta insatisfecha con el uso del recurso, se concluye que este no cuenta con un nivel adecuado para brindar el servicio.\\
+	Como se puede observar la poblacion esta insatisfecha con el uso de las qochas, se concluye que este no cuenta con un nivel adecuado para satisfacer las necesidades, este recurso ayuda a conservar y mantener el agua en periodos de sequía.\\
 	\\
 	Se consulto que otra fuente de agua usa en reemplazo del recurso, de los cual se tiene como resultado:
 	\begin{figure}[H]
@@ -1140,7 +1145,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Otro recurso que suple la oferta del recurso}
 	\end{figure}
-	Se observa que los recursos que reemplazan son embalse y manantial, siendo el segundo el de mayor uso.\\
+	Se observa que los recursos que reemplazan son los manantiales, siendo este el de mayor uso, seguido de dos fuentes de rios.\\
 	\\
 	Se consulto cual es la razon por la que los usuarios no se sienten satisfechos y se identifico lo siguiente:
 	\begin{figure}[H]
@@ -1184,7 +1189,8 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Razon de descontento}
 	\end{figure}
-	Debido a que las respuestas no son alternativas y son abiertas, se opto por utilizar mineria de datos para estas, de la cual se ha identificado que la opinion con mayor frecuencia es que el descontento se debe a la poca disponibilidad de agua.
+	Debido a que las respuestas no son alternativas y son abiertas, se opto por utilizar mineria de datos para estas, de la cual se ha identificado que la opinion con mayor frecuencia es el descontento se debe a la poca disponibilidad de agua, dijeron que no hay agua, se seco el otro año, falta de agua,terreno seco, siendo este el problema aqueja a esta comunidad.\\
+	\\
 	\section{Aspectos socioeconomicos}
 	Se consulto cuantos integrantes de su familia trabajan, de lo cual se tiene la siguiente informacion
 	\begin{figure}[H]
@@ -1213,7 +1219,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{cantidad de integrantes que trabajan en la familia}
 	\end{figure}
-	Se observa que en la mayoria de familias quienes trabajan son dos integrantes, seguido de tres.\\
+	Se observa que en la mayoria de familias quienes trabajan es solo un integrantes, seguido de 2,3,4,5 y hasta 7 integrantes.\\
 	\\
   Se consulto el ingreso familiar promedio de la familia de lo cual se tiene lo siguiente:
 	\begin{figure}[H]
@@ -1240,7 +1246,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Ingreso promedio de las familias de \comunidad}
 	\end{figure}
-	Se puede observar que las familias tienen como ingreso mensual en promedio 1000\\
+	se puede observar que las familas tienen un ingreso de 1000 soles, seguido de 2000 y 1200 soles y por debajo del sueldo minimo vital tenemos a muchas familas que su ingreso es menor, evidenciadose pobreza.\\
 	\\
 	Combinando la cantidad de integrantes que trabajan y el ingreso promedio mensual, se tiene lo siguiente:
 	
@@ -1267,9 +1273,10 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	
 	
 	@
-	\caption{Ingreso promedio de las familias de \comunidad en funciona a la cantidad de persionas que trabajan}
+	\caption{Ingreso promedio de las familias de \comunidad en funcion a la cantidad de personas que trabajan}
 	\end{figure}
-
+	Como se observa las familias con mayor frecuencia su ingreso promedio es de 1000 soles, en funcion a la cantidad de personas que trabajan.\\
+	\\
 	\section{Aspectos sociales y culturales}
 	De la religion que los encuestados creen se tiene la siguiente informacion:
 	\begin{figure}[H]
@@ -1299,7 +1306,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Religion de los pobladores de \comunidad}
 	\end{figure}
-	Se puede observar que la mayoria de los encuestados es de religion catolica y otras, en menor proporcion, seguido de Cristiano.\\
+	Se puede observar que la mayoria de los encuestados es de religion catolica y en menor proporcion son los adventistas, evangelicos y otros no profesan ninguna religion.\\
 	\\
 	De la pregunta respecto a si alguna organizacion cultural se dedica a la realizacion de las actividades de las qochas
 	\begin{figure}[H]
@@ -1323,7 +1330,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Organizacion dedicada a actividades culturales en la qocha}
 	\end{figure}
-	Se observa que la mayoria de los pobladores indica que no existe alguna organizacion dedicada a la realizacion de actividades culturales en la qocha, mientras que solo una persona indica que si.  
+	Se observa que los pobladores indica que no existe alguna organizacion dedicada a la realizacion de actividades culturales en la qocha.\\
 	\section{Aspectos de gestion}
 	De la consulta de la existencia de algun comite encargardo del funcionamiento de la qocha se obtuvo lo siguiente:
 	\begin{figure}[H]
@@ -1348,7 +1355,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Comite encargado de la gestion del uso de la qocha en \comunidad}
 	\end{figure}
-	Se observa que la mayoria de los encuestados indican que no existe un comite de gestion encargado del uso de la qocha.\\
+	Se observa que la mayoria de los encuestados indican que no existe un comite de gestion encargado del uso de la qocha, por lo que se recomienda que se creen este comite para la gestion de las qochas.\\
 	\\
 	Existe alguna organizacion externa dedicada al cuidado de la qocha, de la cual se tiene la siguiente respuesta
 	\begin{figure}[H]
@@ -1407,7 +1414,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Disposicion de apoyo durante la ejecucion del proyecto}
 	\end{figure}
-	Se observa que la mayoria de los encuestados estarian dispuestos a apoyar durante la fase de ejecucion del proyecto.\\
+	Se observa que la mayoria de los encuestados estarian dispuestos a apoyar durante la fase de ejecucion del proyecto, y una pequeña parte no, por lo que se recomienda concientizar a la poblacion. \\
 	\\
 	Explicada la constitucion de un comite encargado de la etapa de funcionamiento del proyecto se consulto la predisposicion de los encuestados a pagar una cuata maxima, de la cual se obtuvo las siguientes cantidades:
 	\begin{figure}[H]
@@ -1438,7 +1445,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Disposicion a pagar cuota durante el periodo de funcionamiento del proyecto}
 	\end{figure}
-	Se puede observar que entre quienes esten dispuestos a pagar y no, la proporcion es muy cercana, siendo mas alta quienes si apoyarian, solo por una persona.\\
+	Se puede observar que la mayoria de la poblacion no quiere pagar la cuota durante el periodo de funcionamiento y en menor proporcion si estan con disponibilidad, se recomienda concientizar a la poblacion la importancia del apoyo en el funcionamiento del proyecto. \\
 	\\
 	De la consulta respecto a la percepcion de un adecuado uso de las qochas por parte de las personas, se tiene la siguiente informacion:
 	\begin{figure}[H]
@@ -1463,9 +1470,10 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	
 	@
 	\caption{Percepcion de uso adecuado de las qochas}
-	En este caso las dos alternativas son muy cercanas en proporcion, ganando por un reducido margen un uso adecuado.
+	Como se puede observar la mayoria de los encuestados indicaron que si hacen uso adecuado de las qochas y en menor proporcion indicaron lo contrario, por lo cual se recomienda trabajar en la parte social para que toda a poblacion haga uso correcto del recurso.\\
+	\\
 	\end{figure}
-	En este caso 
+	
 	\section{Aspectos de medio ambiente}
 	Perjuicio en la actividad agropecuaria debido al cambio climatico
 	\begin{figure}[H]
@@ -1504,7 +1512,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Perjuicio en la actividad agropecuaria debido al cambio climatico}
 	\end{figure}
-	Como se aprecia los perjuicios producidos por el cambio climatico identificados por los encuestados son los siguientes: no hay nevados, poca agua, friaje y menor produccion.\\
+	Como se observa los perjuicios producidos por el cambio climatico identificados por los encuestados son los siguientes: no hay nevados, poca agua, sequia, enfermedades, friaje y menor produccion.\\
 	\\
 	Especies de flora identificadas en la qocha
 	
@@ -1538,7 +1546,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Especies de flora identificadas en la qocha}
 	\end{figure}
-	Se puede observar que las especies de flora identificadas es Ch'inki y Pasto, mientras que las demas son Ichu, Totora y Ajuya.\\
+	Se puede observar que las especies de flora identificadas en mayor proporción es ch´illiwa , mientras que las demas son ichhu, pilli, chachacomo y choquechampi, entre otros que no conocen. \\
 	\\
 	Especies de fauna identificadas en la qocha
 	\begin{figure}[H]
@@ -1567,7 +1575,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Especies de fauna identificadas en la qocha}
 	\end{figure}
-	Se observa que la especie de fauna identificada coon mayor frecuencia es Pato, seguido de Huallata y Parihuanas.\\
+	Se observa que la especie de fauna identificada con mayor frecuencia es Pato, seguido de ajuya que es un ave acuatica de poco vuelo.\\
 	\\
 	Especies vegetales nativas en extincion.
 	\begin{figure}[H]
@@ -1597,7 +1605,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Especies vegetales en extincion}
 	\end{figure}
-	De las especies vegetales en peligrro de extincion, se ha identificado a la Yareta, Q'oya y Chinki.\\
+	De las especies vegetales en peligro de extincion, se ha identificado varios tipos sobre todo las flores, pastos plantas curativas, y otros indicaron que no saben.\\
 	\\
 	Modificaciones identificadas en la turba de la qocha.
 	\begin{figure}[H]
@@ -1628,7 +1636,7 @@ datos2$emisora.1.horario[datos2$emisora.1.horario == ""] <- NA
 	@
 	\caption{Alteraciones de la turba en la qocha}
 	\end{figure}
-	Se observa que los pobladores identifican que la turba se esta secando y desapareciendo.\\
+	Se observa que los pobladores identifican que la turba se esta secando y desapareciendo,la turba también desempeña un papel importante en el ecosistema de las turberas y humedales, proporcionando hábitats para una variedad de especies de plantas y animales.\\
 	\\
 	Alteraciones en la precipitacion pluvial en la zona de la qocha
 	\begin{figure}[H]

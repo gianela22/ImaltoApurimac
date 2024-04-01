@@ -1564,7 +1564,8 @@ Se pregunto respecto a la tenencia de la propiedad en la que habitan los encuest
 	
 	
 	#para eliminar los espacios en blanco de
-	datos <- data.frame(lapply(datos, trimws))
+	datos <- data.frame(lapply(d
+	atos, trimws))
 	datos2 <- subset(datos, Comunidad == "alccasana")
 	
 	library(wordcloud2)
